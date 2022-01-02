@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "@tonaljs/tonal": "^4.6.5"
-  }
+  },
+  "name": "scale_generator",
+  "version": "1.0.0",
+  "main": "script.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JNaeder/Scale_Generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JNaeder/Scale_Generator/issues"
+  },
+  "homepage": "https://github.com/JNaeder/Scale_Generator#readme",
+  "description": ""
 }

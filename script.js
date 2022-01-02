@@ -1,3 +1,5 @@
+import {Note, Key} from "@tonaljs/tonal";
+
 // Document Stuff
 const generateButton = document.getElementById("generate_button");
 const scaleOutput = document.getElementById("output");
@@ -23,6 +25,8 @@ function makeNewScale(){
     const randomMode = createRandom(modes);
     const randomRhythm = rhythmCheckbox.checked ? ` - ${createRandom(rhythm)}` : "";
     scaleOutput.innerHTML = `${randomKey}${randomSign} ${randomMode}${randomRhythm}`;
+
+    console.log(Key.majorKey(`${randomKey}`));
 }
 
 function createRandom(item){
