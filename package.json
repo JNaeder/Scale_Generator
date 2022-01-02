@@ -5,7 +5,10 @@
   "name": "scale_generator",
   "version": "1.0.0",
   "main": "script.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "cssnano": "^5.0.14",
+    "postcss": "^8.4.5"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
