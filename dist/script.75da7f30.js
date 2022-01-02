@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"node_modules/@tonaljs/core/dist/index.es.js":[function(require,module,exports) {
+})({"../node_modules/@tonaljs/core/dist/index.es.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -545,7 +545,7 @@ function distance(fromNote, toNote) {
   const forceDescending = to.height === from.height && to.midi !== null && from.midi !== null && from.step > to.step;
   return coordToInterval([fifths, octs], forceDescending).name;
 }
-},{}],"node_modules/@tonaljs/abc-notation/dist/index.es.js":[function(require,module,exports) {
+},{}],"../node_modules/@tonaljs/abc-notation/dist/index.es.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -639,7 +639,7 @@ var index = {
   distance
 };
 exports.default = index;
-},{"@tonaljs/core":"node_modules/@tonaljs/core/dist/index.es.js"}],"node_modules/@tonaljs/array/dist/index.es.js":[function(require,module,exports) {
+},{"@tonaljs/core":"../node_modules/@tonaljs/core/dist/index.es.js"}],"../node_modules/@tonaljs/array/dist/index.es.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -813,7 +813,7 @@ function permutations(arr) {
     }));
   }, []);
 }
-},{"@tonaljs/core":"node_modules/@tonaljs/core/dist/index.es.js"}],"node_modules/@tonaljs/collection/dist/index.es.js":[function(require,module,exports) {
+},{"@tonaljs/core":"../node_modules/@tonaljs/core/dist/index.es.js"}],"../node_modules/@tonaljs/collection/dist/index.es.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -958,7 +958,7 @@ var index = {
 };
 var _default = index;
 exports.default = _default;
-},{}],"node_modules/@tonaljs/pcset/dist/index.es.js":[function(require,module,exports) {
+},{}],"../node_modules/@tonaljs/pcset/dist/index.es.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1276,7 +1276,7 @@ function listToChroma(set) {
 
   return binary.join("");
 }
-},{"@tonaljs/collection":"node_modules/@tonaljs/collection/dist/index.es.js","@tonaljs/core":"node_modules/@tonaljs/core/dist/index.es.js"}],"node_modules/@tonaljs/chord-type/dist/index.es.js":[function(require,module,exports) {
+},{"@tonaljs/collection":"../node_modules/@tonaljs/collection/dist/index.es.js","@tonaljs/core":"../node_modules/@tonaljs/core/dist/index.es.js"}],"../node_modules/@tonaljs/chord-type/dist/index.es.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1431,7 +1431,7 @@ var index$1 = {
   chordType
 };
 exports.default = index$1;
-},{"@tonaljs/core":"node_modules/@tonaljs/core/dist/index.es.js","@tonaljs/pcset":"node_modules/@tonaljs/pcset/dist/index.es.js"}],"node_modules/@tonaljs/chord-detect/dist/index.es.js":[function(require,module,exports) {
+},{"@tonaljs/core":"../node_modules/@tonaljs/core/dist/index.es.js","@tonaljs/pcset":"../node_modules/@tonaljs/pcset/dist/index.es.js"}],"../node_modules/@tonaljs/chord-detect/dist/index.es.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1505,7 +1505,7 @@ var index = {
   detect
 };
 exports.default = index;
-},{"@tonaljs/chord-type":"node_modules/@tonaljs/chord-type/dist/index.es.js","@tonaljs/core":"node_modules/@tonaljs/core/dist/index.es.js","@tonaljs/pcset":"node_modules/@tonaljs/pcset/dist/index.es.js"}],"node_modules/@tonaljs/scale-type/dist/index.es.js":[function(require,module,exports) {
+},{"@tonaljs/chord-type":"../node_modules/@tonaljs/chord-type/dist/index.es.js","@tonaljs/core":"../node_modules/@tonaljs/core/dist/index.es.js","@tonaljs/pcset":"../node_modules/@tonaljs/pcset/dist/index.es.js"}],"../node_modules/@tonaljs/scale-type/dist/index.es.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1631,7 +1631,7 @@ var index$1 = {
   scaleType
 };
 exports.default = index$1;
-},{"@tonaljs/core":"node_modules/@tonaljs/core/dist/index.es.js","@tonaljs/pcset":"node_modules/@tonaljs/pcset/dist/index.es.js"}],"node_modules/@tonaljs/chord/dist/index.es.js":[function(require,module,exports) {
+},{"@tonaljs/core":"../node_modules/@tonaljs/core/dist/index.es.js","@tonaljs/pcset":"../node_modules/@tonaljs/pcset/dist/index.es.js"}],"../node_modules/@tonaljs/chord/dist/index.es.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1870,7 +1870,7 @@ var index = {
   chord
 };
 exports.default = index;
-},{"@tonaljs/chord-detect":"node_modules/@tonaljs/chord-detect/dist/index.es.js","@tonaljs/chord-type":"node_modules/@tonaljs/chord-type/dist/index.es.js","@tonaljs/core":"node_modules/@tonaljs/core/dist/index.es.js","@tonaljs/pcset":"node_modules/@tonaljs/pcset/dist/index.es.js","@tonaljs/scale-type":"node_modules/@tonaljs/scale-type/dist/index.es.js"}],"node_modules/@tonaljs/duration-value/dist/index.es.js":[function(require,module,exports) {
+},{"@tonaljs/chord-detect":"../node_modules/@tonaljs/chord-detect/dist/index.es.js","@tonaljs/chord-type":"../node_modules/@tonaljs/chord-type/dist/index.es.js","@tonaljs/core":"../node_modules/@tonaljs/core/dist/index.es.js","@tonaljs/pcset":"../node_modules/@tonaljs/pcset/dist/index.es.js","@tonaljs/scale-type":"../node_modules/@tonaljs/scale-type/dist/index.es.js"}],"../node_modules/@tonaljs/duration-value/dist/index.es.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1974,7 +1974,7 @@ function calcDots(fraction, dots) {
 
 var _default = index;
 exports.default = _default;
-},{}],"node_modules/@tonaljs/interval/dist/index.es.js":[function(require,module,exports) {
+},{}],"../node_modules/@tonaljs/interval/dist/index.es.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2217,7 +2217,7 @@ function combinator(fn) {
     }
   };
 }
-},{"@tonaljs/core":"node_modules/@tonaljs/core/dist/index.es.js"}],"node_modules/@tonaljs/midi/dist/index.es.js":[function(require,module,exports) {
+},{"@tonaljs/core":"../node_modules/@tonaljs/core/dist/index.es.js"}],"../node_modules/@tonaljs/midi/dist/index.es.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2338,7 +2338,7 @@ var index = {
   freqToMidi
 };
 exports.default = index;
-},{"@tonaljs/core":"node_modules/@tonaljs/core/dist/index.es.js"}],"node_modules/@tonaljs/note/dist/index.es.js":[function(require,module,exports) {
+},{"@tonaljs/core":"../node_modules/@tonaljs/core/dist/index.es.js"}],"../node_modules/@tonaljs/note/dist/index.es.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2699,7 +2699,7 @@ var index = {
   enharmonic
 };
 exports.default = index;
-},{"@tonaljs/core":"node_modules/@tonaljs/core/dist/index.es.js","@tonaljs/midi":"node_modules/@tonaljs/midi/dist/index.es.js"}],"node_modules/@tonaljs/roman-numeral/dist/index.es.js":[function(require,module,exports) {
+},{"@tonaljs/core":"../node_modules/@tonaljs/core/dist/index.es.js","@tonaljs/midi":"../node_modules/@tonaljs/midi/dist/index.es.js"}],"../node_modules/@tonaljs/roman-numeral/dist/index.es.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2804,7 +2804,7 @@ var index = {
   romanNumeral
 };
 exports.default = index;
-},{"@tonaljs/core":"node_modules/@tonaljs/core/dist/index.es.js"}],"node_modules/@tonaljs/key/dist/index.es.js":[function(require,module,exports) {
+},{"@tonaljs/core":"../node_modules/@tonaljs/core/dist/index.es.js"}],"../node_modules/@tonaljs/key/dist/index.es.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2956,7 +2956,7 @@ var index = {
   minorKey
 };
 exports.default = index;
-},{"@tonaljs/core":"node_modules/@tonaljs/core/dist/index.es.js","@tonaljs/note":"node_modules/@tonaljs/note/dist/index.es.js","@tonaljs/roman-numeral":"node_modules/@tonaljs/roman-numeral/dist/index.es.js"}],"node_modules/@tonaljs/mode/dist/index.es.js":[function(require,module,exports) {
+},{"@tonaljs/core":"../node_modules/@tonaljs/core/dist/index.es.js","@tonaljs/note":"../node_modules/@tonaljs/note/dist/index.es.js","@tonaljs/roman-numeral":"../node_modules/@tonaljs/roman-numeral/dist/index.es.js"}],"../node_modules/@tonaljs/mode/dist/index.es.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3110,7 +3110,7 @@ var index$1 = {
   mode
 };
 exports.default = index$1;
-},{"@tonaljs/collection":"node_modules/@tonaljs/collection/dist/index.es.js","@tonaljs/core":"node_modules/@tonaljs/core/dist/index.es.js","@tonaljs/interval":"node_modules/@tonaljs/interval/dist/index.es.js","@tonaljs/pcset":"node_modules/@tonaljs/pcset/dist/index.es.js","@tonaljs/scale-type":"node_modules/@tonaljs/scale-type/dist/index.es.js"}],"node_modules/@tonaljs/progression/dist/index.es.js":[function(require,module,exports) {
+},{"@tonaljs/collection":"../node_modules/@tonaljs/collection/dist/index.es.js","@tonaljs/core":"../node_modules/@tonaljs/core/dist/index.es.js","@tonaljs/interval":"../node_modules/@tonaljs/interval/dist/index.es.js","@tonaljs/pcset":"../node_modules/@tonaljs/pcset/dist/index.es.js","@tonaljs/scale-type":"../node_modules/@tonaljs/scale-type/dist/index.es.js"}],"../node_modules/@tonaljs/progression/dist/index.es.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3160,7 +3160,7 @@ var index = {
   toRomanNumerals
 };
 exports.default = index;
-},{"@tonaljs/chord":"node_modules/@tonaljs/chord/dist/index.es.js","@tonaljs/core":"node_modules/@tonaljs/core/dist/index.es.js","@tonaljs/roman-numeral":"node_modules/@tonaljs/roman-numeral/dist/index.es.js"}],"node_modules/@tonaljs/range/dist/index.es.js":[function(require,module,exports) {
+},{"@tonaljs/chord":"../node_modules/@tonaljs/chord/dist/index.es.js","@tonaljs/core":"../node_modules/@tonaljs/core/dist/index.es.js","@tonaljs/roman-numeral":"../node_modules/@tonaljs/roman-numeral/dist/index.es.js"}],"../node_modules/@tonaljs/range/dist/index.es.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3225,7 +3225,7 @@ var index = {
   chromatic
 };
 exports.default = index;
-},{"@tonaljs/collection":"node_modules/@tonaljs/collection/dist/index.es.js","@tonaljs/midi":"node_modules/@tonaljs/midi/dist/index.es.js"}],"node_modules/@tonaljs/scale/dist/index.es.js":[function(require,module,exports) {
+},{"@tonaljs/collection":"../node_modules/@tonaljs/collection/dist/index.es.js","@tonaljs/midi":"../node_modules/@tonaljs/midi/dist/index.es.js"}],"../node_modules/@tonaljs/scale/dist/index.es.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3478,7 +3478,7 @@ var index = {
   scale
 };
 exports.default = index;
-},{"@tonaljs/chord-type":"node_modules/@tonaljs/chord-type/dist/index.es.js","@tonaljs/collection":"node_modules/@tonaljs/collection/dist/index.es.js","@tonaljs/core":"node_modules/@tonaljs/core/dist/index.es.js","@tonaljs/note":"node_modules/@tonaljs/note/dist/index.es.js","@tonaljs/pcset":"node_modules/@tonaljs/pcset/dist/index.es.js","@tonaljs/scale-type":"node_modules/@tonaljs/scale-type/dist/index.es.js"}],"node_modules/@tonaljs/time-signature/dist/index.es.js":[function(require,module,exports) {
+},{"@tonaljs/chord-type":"../node_modules/@tonaljs/chord-type/dist/index.es.js","@tonaljs/collection":"../node_modules/@tonaljs/collection/dist/index.es.js","@tonaljs/core":"../node_modules/@tonaljs/core/dist/index.es.js","@tonaljs/note":"../node_modules/@tonaljs/note/dist/index.es.js","@tonaljs/pcset":"../node_modules/@tonaljs/pcset/dist/index.es.js","@tonaljs/scale-type":"../node_modules/@tonaljs/scale-type/dist/index.es.js"}],"../node_modules/@tonaljs/time-signature/dist/index.es.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3564,7 +3564,7 @@ function build([up, down]) {
 
 var _default = index;
 exports.default = _default;
-},{}],"node_modules/@tonaljs/tonal/dist/index.es.js":[function(require,module,exports) {
+},{}],"../node_modules/@tonaljs/tonal/dist/index.es.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3772,7 +3772,7 @@ const ChordDictionary = _chordType.default;
 exports.ChordDictionary = ChordDictionary;
 const ScaleDictionary = _scaleType.default;
 exports.ScaleDictionary = ScaleDictionary;
-},{"@tonaljs/abc-notation":"node_modules/@tonaljs/abc-notation/dist/index.es.js","@tonaljs/array":"node_modules/@tonaljs/array/dist/index.es.js","@tonaljs/chord":"node_modules/@tonaljs/chord/dist/index.es.js","@tonaljs/chord-type":"node_modules/@tonaljs/chord-type/dist/index.es.js","@tonaljs/collection":"node_modules/@tonaljs/collection/dist/index.es.js","@tonaljs/core":"node_modules/@tonaljs/core/dist/index.es.js","@tonaljs/duration-value":"node_modules/@tonaljs/duration-value/dist/index.es.js","@tonaljs/interval":"node_modules/@tonaljs/interval/dist/index.es.js","@tonaljs/key":"node_modules/@tonaljs/key/dist/index.es.js","@tonaljs/midi":"node_modules/@tonaljs/midi/dist/index.es.js","@tonaljs/mode":"node_modules/@tonaljs/mode/dist/index.es.js","@tonaljs/note":"node_modules/@tonaljs/note/dist/index.es.js","@tonaljs/pcset":"node_modules/@tonaljs/pcset/dist/index.es.js","@tonaljs/progression":"node_modules/@tonaljs/progression/dist/index.es.js","@tonaljs/range":"node_modules/@tonaljs/range/dist/index.es.js","@tonaljs/roman-numeral":"node_modules/@tonaljs/roman-numeral/dist/index.es.js","@tonaljs/scale":"node_modules/@tonaljs/scale/dist/index.es.js","@tonaljs/scale-type":"node_modules/@tonaljs/scale-type/dist/index.es.js","@tonaljs/time-signature":"node_modules/@tonaljs/time-signature/dist/index.es.js"}],"script.js":[function(require,module,exports) {
+},{"@tonaljs/abc-notation":"../node_modules/@tonaljs/abc-notation/dist/index.es.js","@tonaljs/array":"../node_modules/@tonaljs/array/dist/index.es.js","@tonaljs/chord":"../node_modules/@tonaljs/chord/dist/index.es.js","@tonaljs/chord-type":"../node_modules/@tonaljs/chord-type/dist/index.es.js","@tonaljs/collection":"../node_modules/@tonaljs/collection/dist/index.es.js","@tonaljs/core":"../node_modules/@tonaljs/core/dist/index.es.js","@tonaljs/duration-value":"../node_modules/@tonaljs/duration-value/dist/index.es.js","@tonaljs/interval":"../node_modules/@tonaljs/interval/dist/index.es.js","@tonaljs/key":"../node_modules/@tonaljs/key/dist/index.es.js","@tonaljs/midi":"../node_modules/@tonaljs/midi/dist/index.es.js","@tonaljs/mode":"../node_modules/@tonaljs/mode/dist/index.es.js","@tonaljs/note":"../node_modules/@tonaljs/note/dist/index.es.js","@tonaljs/pcset":"../node_modules/@tonaljs/pcset/dist/index.es.js","@tonaljs/progression":"../node_modules/@tonaljs/progression/dist/index.es.js","@tonaljs/range":"../node_modules/@tonaljs/range/dist/index.es.js","@tonaljs/roman-numeral":"../node_modules/@tonaljs/roman-numeral/dist/index.es.js","@tonaljs/scale":"../node_modules/@tonaljs/scale/dist/index.es.js","@tonaljs/scale-type":"../node_modules/@tonaljs/scale-type/dist/index.es.js","@tonaljs/time-signature":"../node_modules/@tonaljs/time-signature/dist/index.es.js"}],"script.js":[function(require,module,exports) {
 "use strict";
 
 var _tonal = require("@tonaljs/tonal");
@@ -3808,7 +3808,7 @@ function makeNewScale() {
 function createRandom(item) {
   return item[Math.trunc(Math.random() * item.length)];
 }
-},{"@tonaljs/tonal":"node_modules/@tonaljs/tonal/dist/index.es.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"@tonaljs/tonal":"../node_modules/@tonaljs/tonal/dist/index.es.js"}],"../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -3836,7 +3836,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57775" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50611" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -4012,5 +4012,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","script.js"], null)
+},{}]},{},["../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","script.js"], null)
 //# sourceMappingURL=/script.75da7f30.js.map
