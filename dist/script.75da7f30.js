@@ -3780,13 +3780,14 @@ var _tonal = require("@tonaljs/tonal");
 // Document Stuff
 var generateButton = document.getElementById("generate_button");
 var scaleOutput = document.getElementById("output");
+var noteOutput = document.getElementById("note-output");
 var notesCheckbox = document.getElementById("note-names");
 var rhythmCheckbox = document.getElementById("rhythm");
 var playingStyleCheckbox = document.getElementById("playing-style"); // Scale Variables
 
 var keys = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
-var signs = ['♮', '♭', '♯'];
-var modes = ['Major', 'Dorian', 'Phrygian', 'Lydian', 'Mixolydian', 'Minor', 'Locrian', 'Minor Pentatonic', 'Major Pentatonic', 'Major Triad Arpeggio', 'Minor Triad Arpeggio', 'Dom7 Arpeggio'];
+var signs = ['', 'b', '#'];
+var modes = ['Major', 'Dorian', 'Phrygian', 'Lydian', 'Mixolydian', 'Minor', 'Locrian'];
 var rhythm = ['16ths', '8ths', 'Triplets', 'Sectuplets'];
 var style = ['Straight']; // Event Listeners
 
@@ -3798,7 +3799,10 @@ function makeNewScale() {
   var randomMode = createRandom(modes);
   var randomRhythm = rhythmCheckbox.checked ? " - ".concat(createRandom(rhythm)) : "";
   scaleOutput.innerHTML = "".concat(randomKey).concat(randomSign, " ").concat(randomMode).concat(randomRhythm);
-  console.log(_tonal.Key.majorKey("".concat(randomKey)));
+
+  var scaleNotes = _tonal.Mode.notes(randomMode, "".concat(randomKey).concat(randomSign));
+
+  noteOutput.textContent = scaleNotes.join(" - ");
 }
 
 function createRandom(item) {
